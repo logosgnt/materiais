@@ -165,3 +165,9 @@ a:hover {
     font-size: 1.7rem;
   }
 }
+
+.favicon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
