@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulario de Latín</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .entry {
+      margin: .4rem 0;
+      padding-left: .4rem;
+      border-left: 2px solid #333;
+    }
+    .greek {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.05rem;
+    }
+
+    #pdf-btn {
+      display: block;
+      margin: 2.5rem auto;
+      padding: .7rem 1.4rem;
+      background: #222;
+      border: 1px solid #444;
+      color: #eee;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: .2s;
+      font-size: 1rem;
+    }
+    #pdf-btn:hover {
+      background: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Vocabulario de Latín I</h1>
+  <p style="text-align:center; opacity:.7;">
+    Listaxe alfabética de vocabulario fundamental.
+  </p>
+
+  <!-- LISTA PLANA -->
+
+  
+
+  <!-- BOTÓN PDF -->
+  <button id="pdf-btn">📄 Xerar PDF</button>
+
+  <p class="footer-link">
+    <a href="../">← Volver á portada</a>
+  </p>
+
+  <!-- jsPDF + autoTable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+  <!-- SCRIPT PDF -->
+  <script>
+  document.getElementById("pdf-btn").addEventListener("click", async () => {
+    const { jsPDF } = window.jspdf;
+
+    const doc = new jsPDF({
+      orientation: "portrait",
+      unit: "pt",
+      format: "a4"
+    });
+
+    // 1. Cargar fonte DejaVu desde o repo
+    const fontBytes = await fetch("../fonts/DejaVuLGCSerif.ttf")
+      .then(r => r.arrayBuffer())
+      .then(buf => btoa(String.fromCharCode(...new Uint8Array(buf))));
+
+    doc.addFileToVFS("DejaVuSerif.ttf", fontBytes);
+    doc.addFont("DejaVuSerif.ttf", "DejaVuSerif", "normal");
+    doc.setFont("DejaVuSerif");
+    doc.setFontSize(12);
+
+    // 2. Márxenes
+    const margin = 56.7; // 2 cm
+
+    // 3. Recoller vocabulario
+    const entries = Array.from(document.querySelectorAll(".entry"))
+      .map(e => e.innerText);
+
+    // 4. Dúas columnas
+    const half = Math.ceil(entries.length / 2);
+    const col1 = entries.slice(0, half);
+    const col2 = entries.slice(half);
+    const rows = col1.map((v, i) => [v, col2[i] || ""]);
+
+    // 5. Título
+    doc.text("Vocabulario de Grego", margin, margin);
+
+    // 6. Táboa principal
+    doc.autoTable({
+      startY: margin + 20,
+      margin: { left: margin, right: margin },
+      head: [],
+      body: rows,
+      styles: {
+        font: "DejaVuSerif",
+        fontSize: 12,
+        cellPadding: 3
+      },
+      theme: "plain"
+    });
+
+    // 7. Gardar PDF
+    doc.save("vocabulario_grego.pdf");
+  });
+  </script>
+
+</body>
+</html>
