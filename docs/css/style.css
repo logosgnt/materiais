@@ -28,7 +28,7 @@ body {
   color: var(--text);
   line-height: 1.6;
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -51,95 +51,85 @@ h2 {
 }
 
 /* ----------------------------- */
-/*           SECCIÓN             */
+/*         DASHBOARD LAYOUT      */
 /* ----------------------------- */
 
-.section {
-  margin: 3rem auto;
-  width: 100%;
-}
-
-/* ----------------------------- */
-/*           GRID                */
-/* ----------------------------- */
-
-.grid {
+.dashboard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.2rem;
-  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
 }
 
 /* ----------------------------- */
-/*           CARD                */
+/*            PANEL              */
+/* ----------------------------- */
+
+.panel {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.panel h2 {
+  margin-bottom: 1.4rem;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+/* ----------------------------- */
+/*             CARD              */
 /* ----------------------------- */
 
 .card {
-    background: var(--bg-alt);
-    border: 1px solid var(--border);
-    padding: 1.2rem;
-    border-radius: var(--radius);
-    text-decoration: none;
-    color: var(--text);
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  
-    gap: 0.6rem;
-    transition: all 0.25s ease;
-  
-    text-align: center;     /* ← garante centrado total */
-  }
-  
-  .card:hover {
-    background: var(--bg-hover);
-    transform: translateY(-4px);
-    border-color: #444;
-  }
-  
-  /* Título */
-  .card strong {
-    font-size: 1rem;
-    display: block;          /* ← garante que non rompa */
-    text-align: center;
-  }
-  
-  /* Descrición */
-  .card p {
-    color: var(--text-muted);
-    font-size: 0.85rem;
-    text-align: center;
-    display: block;          /* ← evita desalineacións */
-    margin: 0;               /* ← evita saltos raros */
-  }
-  
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+.card:hover {
+  background: var(--bg-hover);
+  transform: translateY(-4px);
+  border-color: #555;
+}
+
+.card strong {
+  font-size: 1rem;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: .85rem;
+}
 
 /* ----------------------------- */
 /*          FAVICON              */
 /* ----------------------------- */
 
 .favicon {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 /* ----------------------------- */
-/*        ENLACES NORMAIS        */
-/* ----------------------------- */
-
-a {
-  color: #9ab;
-  transition: opacity 0.2s ease;
-}
-
-a:hover {
-  opacity: 0.7;
-}
-
-/* ----------------------------- */
-/*       FOOTER / BACK LINK      */
+/*            FOOTER             */
 /* ----------------------------- */
 
 .footer-link {
@@ -153,21 +143,16 @@ a:hover {
 }
 
 /* ----------------------------- */
-/*       RESPONSIVIDADE          */
+/*        RESPONSIVIDADE         */
 /* ----------------------------- */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   body {
     padding: 1.2rem;
   }
 
-  h1 {
-    font-size: 1.7rem;
+  .dashboard {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
-}
-
-.favicon {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
 }
