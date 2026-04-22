@@ -2,11 +2,11 @@
 
 ## Α
 
-- Ἀβροκόμης: abrócomes (fillo do rei Darío de Persia)
+- Ἀβροκόμης: Abrócomes (fillo do rei Darío de Persia)
 
 - Ἀβυδηνός, -ή, -όν: abideno, de Ábidos
 
-- Ἄβυδος, -ου: ábido (cidade do Helesponto)
+- Ἄβυδος, -ου: Ábido (cidade do Helesponto)
 
 - ἀγαθός, -ή, -όν: bo
 
