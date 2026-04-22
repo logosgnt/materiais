@@ -1107,11 +1107,11 @@
 - ἐγγυάω: dar por esposa
 
 - ἐγγύς: (+ xen.) perto de
-1. τὸ ἐγγυτέτω: as proximidades
 
 - ἐγγυτέρω: máis cerca
+1. τὸ ἐγγυτέρω: as proximidades
 
-- ἐγγυτέτω (τὸ): as proximidades, os arredores
+- ἐγγυτέρω (τὸ): as proximidades, os arredores
 
 - ἐγείρω, ἐγερῶ, ἤγειρα ἠγέρθην: despertar
 
