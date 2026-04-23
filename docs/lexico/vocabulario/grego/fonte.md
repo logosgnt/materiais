@@ -116,7 +116,7 @@
 
 - αἴξ, αἰγός: cabra
 
-- Αἰολεῖς (ac. -έας): eolios
+- Αἰολεῖς: (ac. -έας) eolios
 
 - Αἰόλιος, -α, -ον: de Eolo
 
@@ -254,7 +254,7 @@
 
 - ἄν: partícula potencial
 
-- ἀνά (+ac): por (arriba de) ... 
+- ἀνά: por (arriba de) ...  (+ac)
 
 - ἀναβαίνω: subir
 
@@ -330,7 +330,7 @@
 
 - ἀνέρχομαι: subir, regresar
 
-- ἄνευ (+ xen.): sen
+- ἄνευ: sen (+ xen.)
 
 - ἀνέχω: levantar; med. soportar
 
@@ -362,9 +362,9 @@
 
 - ἀντέχω: resistir, facerlle fronte a (+ dat., πρός + ac.)
 
-- ἀντί (+ xen.): en vez de
+- ἀντί: en vez de (+ xen.)
 
-- ἀντιόομαι, ἀντιώσομαι, ἠντιώθην (+dat): opoñer
+- ἀντιόομαι, ἀντιώσομαι, ἠντιώθην: opoñer (+dat)
 
 - ἀντιτάσσω: colocar enfronte
 
@@ -376,7 +376,7 @@
 
 - ἄνω: arriba
 
-- ἄξιος, -α, -ον (+ xen.): digno de
+- ἄξιος, -α, -ον: digno de  (+ xen.)
 
 - ἀπαγγέλλω: comunicar
 
@@ -418,7 +418,7 @@
 
 - ἄπιστος, -ον: incrible, infiel
 
-- ἀπό (+ xen.): desde
+- ἀπό: desde  (+ xen.)
 
 - ἀποβαίνω: marchar, desembarcar
 
@@ -468,7 +468,7 @@
 
 - ἀπόρρητος, -ον: secreto
 
-- ἀποσείω (+ med.): derrubar
+- ἀποσείω:  (+ med.) derrubar
 
 - ἀποστέλλω: enviar, despachar
 
@@ -500,7 +500,7 @@
 
 - ἄργυρος, -ου: prata
 
-- ἀρέσκει (+ dat.): ser agradable
+- ἀρέσκει: ser agradable/gustar (+ dat.)
 
 - ἀρετή, -ῆς: virtude
 
@@ -546,7 +546,7 @@
 
 - ἀρχιτέκτων, -ονος: arquitecto
 
-- ἄρχω (+ xen.): comezar; gobernar; originar; (med.) + inf.: comezar a.
+- ἄρχω: comezar; gobernar  (+ xen.); originar; (med.) + inf.: comezar a.
 
 - ἄρχων, -οντος: xefe, gobernador, arconte
 
@@ -732,7 +732,7 @@
 
 - βούλομαι, βουλήσομαι, ἐβουλήθην, βεβούλημαι: querer
 
-- βοῦς, βοός (ac. pl.: βοῦς): boi
+- βοῦς, βοός:  (ac. pl.: βοῦς) boi
 
 - βραδέως: lentamente
 
@@ -746,7 +746,7 @@
 
 - βρυχάομαι: ruxir
 
-- βυρβασίας (ac. pl.): birbasías (especie de gorros)
+- βυρβασίας:  (ac. pl.) birbasías (especie de gorros)
 
 - βωμός, -οῦ: altar
 
@@ -768,7 +768,7 @@
 
 - γαστήρ, -τρός: estómago
 
-- γε (enclítica): polo menos
+- γε: (enclítica) polo menos
 
 - γέγονα (γεγένημαι): perfecto de γίγνομαι
 
@@ -859,9 +859,9 @@
 1. μέν ... δέ ...: por unha parte... por outra parte...
 2. ὁ δὲ...: e el...; mais el...; con todo, el...
 
-- δέδοικα (pfto. con significado de presente): temer
+- δέδοικα:  (pfto. con significado de presente) temer
 
-- δεῖ, δεήσει, ἔδεησε (+ ac. + infinitivo): é necesario
+- δεῖ, δεήσει, ἔδεησε: é necesario (+ ac. + infinitivo)
 
 - δείδω: temer
 
@@ -939,7 +939,7 @@
 
 - δήπου: seguramente, sen dúbida
 
-- διά (+ xen.): a través de; (+ acus.) a causa de
+- διά: a través de (+ xen.); a causa de (+ acus.)
 
 - διαβαίνω: cruzar
 
@@ -959,13 +959,13 @@
 
 - διακομίζω: transportar
 
-- διαλέγομαι (+ dat.): falar a, conversar con
+- διαλέγομαι: falar a (+ dat.), conversar con
 
 - διαλύω: disolver(se), desfacer, desprender; (med.) resolver
 
 - διάνοια, -ας: intención, intelixencia
 
-- διαπέμπω (+ med.): enviar (acus.) [a través (dat.)]
+- διαπέμπω:  (+ med.) enviar (acus.) [a través (dat.)]
 
 - διαρπάζω: devastar
 
@@ -973,7 +973,7 @@
 
 - διαφαίνω: brillar
 
-- διαφέρει (impersonal + xen., dat.): difere, é diferente de
+- διαφέρει: difre, é diferente de (impersoal + xen./dat.)
 
 - διαφέρωπυς: sobre todo
 
@@ -1030,7 +1030,7 @@
 
 - δίωξις, -εως: persecución
 
-- δοκεῖ, ἔδοξε (+ dat. + infinitivo): parece (ben)
+- δοκεῖ, ἔδοξε: parece (ben) (+ dat. + infinitivo)
 1. ὡς δοκεῖ: segundo parece
 2. δοκεῖ μοι: paréceme ben
 
@@ -1078,7 +1078,7 @@
 
 - δώματα, -ων: palacio
 
-- δωρέω (+ media): obsequiar
+- δωρέω:  (+ media) obsequiar
 
 - Δωριεύς, -έως: dorio
 
@@ -1088,7 +1088,7 @@
 
 - ἑάλων: aor. de ἁλίσκομαι
 
-- ἐάν (+ subxuntivo): se
+- ἐάν:  (+ subxuntivo) se
 
 - ἔαρ, ἔαρος (ἦρος), τό: primavera
 
@@ -1127,7 +1127,7 @@
 
 - ἐγώ: eu
 
-- ἔγωγε (enfático): eu
+- ἔγωγε: (enfático) eu
 
 - ἔδακον: aor. de δάκνω
 
@@ -1256,7 +1256,7 @@
 
 - ἐκκλησία, -ας: asemblea
 
-- ἐκκομίζω (+ med.): levar fóra, sacar
+- ἐκκομίζω:  (+ med.) levar fóra, sacar
 
 - ἑκούσιος, -α, -ον: voluntario
 
@@ -1274,7 +1274,7 @@
 
 - ἐκτελέω: acabar
 
-- ἐκτός (+ xen.): fóra
+- ἐκτός: fóra  (+ xen.)
 
 - ἕκτος, -η, -ον: sexto
 
@@ -1503,7 +1503,7 @@
 
 - ἐπικυρέω: conseguir
 
-- ἐπιλανθάνομαι (+ xen.): esquecerse de
+- ἐπιλανθάνομαι:  (+ xen.) esquecerse de
 
 - ἐπιμελέομαι: (+ xen.) Preocuparse de
 
@@ -1551,7 +1551,7 @@
 
 - ἕπομαι = ἐπέρχομαι
 
-- ἕπομαι, ἕψομαι, ἑσπόμην (+ dat.): seguir
+- ἕπομαι, ἕψομαι, ἑσπόμην:  (+ dat.) seguir
 
 - ἑπόμην: aor. de πυνθάνομαι
 
@@ -2001,7 +2001,7 @@
 
 - ἱμάτιον, -ου: manto
 
-- ἵνα (+ subxuntivo / optativo): para que (+subx.)
+- ἵνα:  (+ subxuntivo / optativo) para que
 
 - ἱππάζομαι: cabalgar
 
@@ -2187,7 +2187,7 @@
 
 - κατάσκοπος, -ου: espía
 
-- καταστρέφω (+med.): someter
+- καταστρέφω : (+med.) someter
 
 - κατασφάζω: degollar
 
@@ -2592,11 +2592,11 @@
 
 - μελίζω, ἐμέλισα: despezar
 
-- μέλλω, μελλήσω, ἐμέλλησα (+inf.): ir (+inf.)
+- μέλλω, μελλήσω, ἐμέλλησα: ir (+inf.)
 
 - μέμνημαι: perfecto medio con valor de presente.
 
-- μέμνημαι (pfto. con valor de pste.): lembrar
+- μέμνημαι:  (pfto. con valor de pte.) lembrar
 
 - Μέμφις, -εως: menfis
 
@@ -2615,8 +2615,8 @@
 - μεσημβρία, -ας: mediodía
 
 - μέσος, -η, -ον: medio
-1. ἐν μέσῳ (+xen.): no medio de
-2. κατὰ μέσον (+xen.): polo medio de
+1. ἐν μέσῳ: no medio de  (+xen.)
+2. κατὰ μέσον: polo medio de  (+xen.)
 
 - μεστός, -ή, -όν: cheo
 
@@ -2640,7 +2640,7 @@
 
 - μέτωπον, -ου: fronte
 
-- μέχρι (+xen.): ata
+- μέχρι: ata  (+xen.)
 1. μέχρι οὗ: ata que, mentres que
 
 - μή: non
@@ -2808,7 +2808,7 @@
 
 - νεώς: xenitivo de ναῦς
 
-- νή (+ Ac.): si, por ...
+- νή: si, por ...  (+ ac.)
 
 - Νησαῖος, -α, -ον: neseo, de Nesea (chaira persa)
 
@@ -3195,7 +3195,7 @@
 
 - παραβάλλω: botar
 
-- παραβοηθέω (+dat.): vir a axudar
+- παραβοηθέω: vir a axudar  (+dat.)
 
 - παραγίγνομαι: presentarse [a, ante (+dat.)], chegar
 
@@ -3205,7 +3205,7 @@
 
 - παρακαλέω: chamar, pedir
 
-- παραλαμβάνω (+med.): acoller, asociar; apoderarse de (+xen.)
+- παραλαμβάνω:  (+med.) acoller, asociar; apoderarse de (+xen.)
 
 - παράλογος, -ου: contrasentido
 
@@ -3239,7 +3239,7 @@
 
 - Παρθενών, -ος: o Partenón
 
-- παρίστημι (+dat.): permanecer preto, soster
+- παρίστημι: permanecer preto, soster (+dat.)
 
 - παροράω: desprezar
 
@@ -3337,13 +3337,13 @@
 
 - πίπτω, πεσοῦμαι, ἔπεσον, πέπτωκα: caer
 
-- πιστεύω (+dat.): confiar en
+- πιστεύω: confiar en (+dat.)
 
 - πλανάω: extraviar; (med.) Extraviarse, andar perdido
 
 - πλάνη, -ης: viaxe (errante)
 
-- Πλάταια, -ας (tm.. en pl.): platea (cidade de Beocia)
+- Πλάταια, -ας : (tm.. en pl.) Platea (cidade de Beocia)
 
 - Πλαταιεύς, -έως: plateense, de Platea
 
@@ -3516,7 +3516,7 @@
 
 - πρίν: (+infinitivo) antes de, (indicat./subx.) antes de que
 
-- πρό (+xen.): ante, antes de
+- πρό: ante, antes de  (+xen.)
 
 - προάγω: levar adiante
 
@@ -3794,7 +3794,7 @@
 
 - στράτευμα, -ατος: exército
 
-- στρατεύω (e med.): prestar servizo militar; ir á guerra
+- στρατεύω:  (e med.) prestar servizo militar; ir á guerra
 
 - στρατηγέω: comandar, ser estratego
 
@@ -3834,7 +3834,7 @@
 
 - συμβάλλω: (+dat.) trabar (combate); med. comprender
 
-- συμβουλεύω (+dat.): aconsellar
+- συμβουλεύω: aconsellar  (+dat.)
 
 - σύμβουλος, -ου: conselleiro
 
@@ -3884,7 +3884,7 @@
 
 - συντρέχω: correr xuntos
 
-- συντυγχάνω (+dat): xuntarse con
+- συντυγχάνω: xuntarse con  (+dat)
 
 - Συράκουσαι, -ῶν: Siracusa (cidade de Sicilia)
 

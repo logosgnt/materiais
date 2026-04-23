@@ -4,54 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vocabulario de Latín</title>
-  <link rel="stylesheet" href="../../css/style.css">
-
-  <style>
-    .entry {
-      margin: .4rem 0;
-      padding-left: .4rem;
-      border-left: 2px solid #333;
-    }
-    .greek {
-      font-family: "Times New Roman", Times, serif;
-      font-size: 1.05rem;
-    }
-
-    #pdf-btn {
-      display: block;
-      margin: 2.5rem auto;
-      padding: .7rem 1.4rem;
-      background: #222;
-      border: 1px solid #444;
-      color: #eee;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: .2s;
-      font-size: 1rem;
-    }
-    #pdf-btn:hover {
-      background: #333;
-    }
-  </style>
+  <link rel="stylesheet" href="../core/vocabulario.css">
 </head>
 
-<body>
+<body class="vocabulario-page">
+  <main class="page">
 
-  <h1>Vocabulario de Latín I</h1>
-  <p style="text-align:center; opacity:.7;">
-    Listaxe alfabética de vocabulario fundamental.
-  </p>
+    <h1>Vocabulario de Latín I</h1>
+    <p class="lead">Listaxe alfabética de vocabulario fundamental.</p>
 
-  <!-- LISTA PLANA -->
+    <section class="toolbar" aria-label="Filtros do vocabulario">
+      <input id="search" placeholder="Buscar (amo, terra, etc.)">
+      <div id="letters"></div>
+      <p id="count" aria-live="polite"></p>
+    </section>
 
-  
+    <div id="results"></div>
 
-  <!-- BOTÓN PDF -->
-  <button id="pdf-btn">📄 Xerar PDF</button>
+    <!-- BOTÓN PDF -->
+    <button id="pdf-btn">Xerar PDF</button>
 
-  <p class="footer-link">
-    <a href="../">← Volver á portada</a>
-  </p>
+    <p class="footer-link">
+      <a href="../">← Volver á portada</a>
+    </p>
+
+  </main>
+
+  <!-- CONFIGURACIÓN -->
+  <script>
+    window.VOCABULARIO_CONFIG = {
+      mode: "latin",
+      dataUrl: "./vocabulario_latin.json",
+      title: "Latín"
+    };
+  </script>
+
+  <!-- MOTOR -->
+  <script src="../core/vocabulario.js"></script>
 
   <!-- jsPDF + autoTable -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -69,9 +58,9 @@
     });
 
     // 1. Cargar fonte DejaVu desde o repo
-    const fontBytes = await fetch("../fonts/DejaVuLGCSerif.ttf")
+    const fontBytes = await fetch("../../../fonts/DejaVuLGCSerif.ttf")
       .then(r => r.arrayBuffer())
-      .then(buf => btoa(String.fromCharCode(...new Uint8Array(buf))));
+      .then(arrayBufferToBase64);
 
     doc.addFileToVFS("DejaVuSerif.ttf", fontBytes);
     doc.addFont("DejaVuSerif.ttf", "DejaVuSerif", "normal");
@@ -92,7 +81,7 @@
     const rows = col1.map((v, i) => [v, col2[i] || ""]);
 
     // 5. Título
-    doc.text("Vocabulario de Grego", margin, margin);
+    doc.text("Vocabulario de Latín", margin, margin);
 
     // 6. Táboa principal
     doc.autoTable({
@@ -109,8 +98,20 @@
     });
 
     // 7. Gardar PDF
-    doc.save("vocabulario_grego.pdf");
+    doc.save("vocabulario_latin.pdf");
   });
+
+  function arrayBufferToBase64(buffer) {
+    const bytes = new Uint8Array(buffer);
+    const chunkSize = 0x8000;
+    let binary = "";
+
+    for (let i = 0; i < bytes.length; i += chunkSize) {
+      binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize));
+    }
+
+    return btoa(binary);
+  }
   </script>
 
 </body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulario de Grego</title>
+  <link rel="stylesheet" href="../core/vocabulario.css">
+</head>
+
+<body class="vocabulario-page">
+  <main class="page">
+
+    <h1>Vocabulario de Grego</h1>
+    <p class="lead">Listaxe alfabética de vocabulario fundamental.</p>
+
+    <section class="toolbar" aria-label="Filtros do vocabulario">
+      <input id="search" placeholder="Buscar (logos, anabainw, etc.)">
+      <div id="letters"></div>
+      <p id="count" aria-live="polite"></p>
+    </section>
+
+    <div id="results"></div>
+
+    <p class="footer-link">
+      <a href="../">← Volver á portada</a>
+    </p>
+
+  </main>
+
+  <!-- CONFIGURACIÓN -->
+  <script>
+    window.VOCABULARIO_CONFIG = {
+      mode: "greek",
+      dataUrl: "./vocabulario_grego.json",
+      title: "Grego"
+    };
+  </script>
+
+  <!-- MOTOR -->
+  <script src="../core/vocabulario.js"></script>
+</body>
+</html>

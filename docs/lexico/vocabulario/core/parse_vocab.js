@@ -1,8 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const input = path.join(__dirname, "vocabulario_grego1.md");
-const output = path.join(__dirname, "vocabulario_grego.json");
+const input = path.join(__dirname, "../grego/fonte.md");
+const output = path.join(__dirname, "../grego/vocabulario_grego.json");
 
 const raw = fs.readFileSync(input, "utf8");
 const lines = raw.split(/\r?\n/);

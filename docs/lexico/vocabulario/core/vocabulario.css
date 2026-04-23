@@ -1,0 +1,168 @@
+:root {
+  --vocab-bg: #f6f3ee;
+  --vocab-surface: #fffaf2;
+  --vocab-text: #1f1c18;
+  --vocab-muted: #6f675f;
+  --vocab-line: rgba(31, 28, 24, 0.12);
+  --vocab-accent: #7c5c2e;
+  --vocab-accent-soft: #efe3d0;
+  --vocab-max: 900px;
+}
+
+body.vocabulario-page {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(124, 92, 46, 0.16), transparent 30rem),
+    var(--vocab-bg);
+  color: var(--vocab-text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+}
+
+.vocabulario-page * {
+  box-sizing: border-box;
+}
+
+.vocabulario-page .page {
+  max-width: var(--vocab-max);
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.vocabulario-page h1 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(2rem, 8vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.lead {
+  margin: 0 0 1.5rem;
+  color: var(--vocab-muted);
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.8rem 0 1rem;
+  background: linear-gradient(to bottom, var(--vocab-bg) 70%, rgba(246, 243, 238, 0));
+}
+
+#search {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--vocab-line);
+  border-radius: 999px;
+  background: var(--vocab-surface);
+  color: var(--vocab-text);
+  font: inherit;
+  font-size: 1rem;
+}
+
+#search:focus {
+  border-color: var(--vocab-accent);
+  outline: 3px solid var(--vocab-accent-soft);
+}
+
+#letters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0 0.6rem;
+}
+
+.letter-chip {
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--vocab-line);
+  border-radius: 999px;
+  cursor: pointer;
+  background: var(--vocab-surface);
+  color: var(--vocab-text);
+  font: inherit;
+}
+
+.letter-chip.active,
+.letter-chip:hover {
+  background: var(--vocab-accent);
+  color: white;
+}
+
+#count {
+  color: var(--vocab-muted);
+  font-size: 0.9rem;
+}
+
+#results {
+  border-top: 1px solid var(--vocab-line);
+}
+
+.entry {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--vocab-line);
+}
+
+.headword,
+.subterm {
+  color: var(--vocab-text);
+  font-weight: 700;
+}
+
+.greek {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+
+.meaning {
+  color: var(--vocab-muted);
+}
+
+.subs {
+  margin: 0.35rem 0 0.1rem 1.2rem;
+  padding: 0;
+  color: var(--vocab-muted);
+}
+
+.subs li {
+  margin: 0.15rem 0;
+}
+
+.empty {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid var(--vocab-line);
+  border-radius: 12px;
+  background: var(--vocab-surface);
+  color: var(--vocab-muted);
+}
+
+#pdf-btn {
+  display: block;
+  margin: 2.5rem auto;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--vocab-line);
+  border-radius: 999px;
+  background: var(--vocab-text);
+  color: var(--vocab-bg);
+  cursor: pointer;
+  font: inherit;
+}
+
+.footer-link {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer-link a {
+  color: var(--vocab-muted);
+}
+
+@media (max-width: 700px) {
+  .vocabulario-page .page {
+    padding: 1.2rem 0.85rem;
+  }
+
+  .toolbar {
+    position: static;
+  }
+}

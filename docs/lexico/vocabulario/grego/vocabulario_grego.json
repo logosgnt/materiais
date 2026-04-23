@@ -228,8 +228,8 @@
     "significado": "cabra"
   },
   {
-    "voz": "Αἰολεῖς (ac. -έας)",
-    "significado": "eolios"
+    "voz": "Αἰολεῖς",
+    "significado": "(ac. -έας) eolios"
   },
   {
     "voz": "Αἰόλιος, -α, -ον",
@@ -504,8 +504,8 @@
     "significado": "partícula potencial"
   },
   {
-    "voz": "ἀνά (+ac)",
-    "significado": "por (arriba de) ..."
+    "voz": "ἀνά",
+    "significado": "por (arriba de) ... (+ac)"
   },
   {
     "voz": "ἀναβαίνω",
@@ -656,8 +656,8 @@
     "significado": "subir, regresar"
   },
   {
-    "voz": "ἄνευ (+ xen.)",
-    "significado": "sen"
+    "voz": "ἄνευ",
+    "significado": "sen (+ xen.)"
   },
   {
     "voz": "ἀνέχω",
@@ -720,12 +720,12 @@
     "significado": "resistir, facerlle fronte a (+ dat., πρός + ac.)"
   },
   {
-    "voz": "ἀντί (+ xen.)",
-    "significado": "en vez de"
+    "voz": "ἀντί",
+    "significado": "en vez de (+ xen.)"
   },
   {
-    "voz": "ἀντιόομαι, ἀντιώσομαι, ἠντιώθην (+dat)",
-    "significado": "opoñer"
+    "voz": "ἀντιόομαι, ἀντιώσομαι, ἠντιώθην",
+    "significado": "opoñer (+dat)"
   },
   {
     "voz": "ἀντιτάσσω",
@@ -748,8 +748,8 @@
     "significado": "arriba"
   },
   {
-    "voz": "ἄξιος, -α, -ον (+ xen.)",
-    "significado": "digno de"
+    "voz": "ἄξιος, -α, -ον",
+    "significado": "digno de (+ xen.)"
   },
   {
     "voz": "ἀπαγγέλλω",
@@ -832,8 +832,8 @@
     "significado": "incrible, infiel"
   },
   {
-    "voz": "ἀπό (+ xen.)",
-    "significado": "desde"
+    "voz": "ἀπό",
+    "significado": "desde (+ xen.)"
   },
   {
     "voz": "ἀποβαίνω",
@@ -932,8 +932,8 @@
     "significado": "secreto"
   },
   {
-    "voz": "ἀποσείω (+ med.)",
-    "significado": "derrubar"
+    "voz": "ἀποσείω",
+    "significado": "(+ med.) derrubar"
   },
   {
     "voz": "ἀποστέλλω",
@@ -996,8 +996,8 @@
     "significado": "prata"
   },
   {
-    "voz": "ἀρέσκει (+ dat.)",
-    "significado": "ser agradable"
+    "voz": "ἀρέσκει",
+    "significado": "ser agradable/gustar (+ dat.)"
   },
   {
     "voz": "ἀρετή, -ῆς",
@@ -1088,8 +1088,8 @@
     "significado": "arquitecto"
   },
   {
-    "voz": "ἄρχω (+ xen.)",
-    "significado": "comezar; gobernar; originar; (med.) + inf.: comezar a."
+    "voz": "ἄρχω",
+    "significado": "comezar; gobernar (+ xen.); originar; (med.) + inf.: comezar a."
   },
   {
     "voz": "ἄρχων, -οντος",
@@ -1456,8 +1456,8 @@
     "significado": "querer"
   },
   {
-    "voz": "βοῦς, βοός (ac. pl.",
-    "significado": "βοῦς): boi"
+    "voz": "βοῦς, βοός",
+    "significado": "(ac. pl.: βοῦς) boi"
   },
   {
     "voz": "βραδέως",
@@ -1484,8 +1484,8 @@
     "significado": "ruxir"
   },
   {
-    "voz": "βυρβασίας (ac. pl.)",
-    "significado": "birbasías (especie de gorros)"
+    "voz": "βυρβασίας",
+    "significado": "(ac. pl.) birbasías (especie de gorros)"
   },
   {
     "voz": "βωμός, -οῦ",
@@ -1524,8 +1524,8 @@
     "significado": "estómago"
   },
   {
-    "voz": "γε (enclítica)",
-    "significado": "polo menos"
+    "voz": "γε",
+    "significado": "(enclítica) polo menos"
   },
   {
     "voz": "γέγονα (γεγένημαι)",
@@ -1688,12 +1688,12 @@
     "significado": "e, pero\n1. μέν ... δέ ...: por unha parte... por outra parte...\n2. ὁ δὲ...: e el...; mais el...; con todo, el..."
   },
   {
-    "voz": "δέδοικα (pfto. con significado de presente)",
-    "significado": "temer"
+    "voz": "δέδοικα",
+    "significado": "(pfto. con significado de presente) temer"
   },
   {
-    "voz": "δεῖ, δεήσει, ἔδεησε (+ ac. + infinitivo)",
-    "significado": "é necesario"
+    "voz": "δεῖ, δεήσει, ἔδεησε",
+    "significado": "é necesario (+ ac. + infinitivo)"
   },
   {
     "voz": "δείδω",
@@ -1848,8 +1848,8 @@
     "significado": "seguramente, sen dúbida"
   },
   {
-    "voz": "διά (+ xen.)",
-    "significado": "a través de; (+ acus.) a causa de"
+    "voz": "διά",
+    "significado": "a través de (+ xen.); a causa de (+ acus.)"
   },
   {
     "voz": "διαβαίνω",
@@ -1888,8 +1888,8 @@
     "significado": "transportar"
   },
   {
-    "voz": "διαλέγομαι (+ dat.)",
-    "significado": "falar a, conversar con"
+    "voz": "διαλέγομαι",
+    "significado": "falar a (+ dat.), conversar con"
   },
   {
     "voz": "διαλύω",
@@ -1900,8 +1900,8 @@
     "significado": "intención, intelixencia"
   },
   {
-    "voz": "διαπέμπω (+ med.)",
-    "significado": "enviar (acus.) [a través (dat.)]"
+    "voz": "διαπέμπω",
+    "significado": "(+ med.) enviar (acus.) [a través (dat.)]"
   },
   {
     "voz": "διαρπάζω",
@@ -1916,8 +1916,8 @@
     "significado": "brillar"
   },
   {
-    "voz": "διαφέρει (impersonal + xen., dat.)",
-    "significado": "difere, é diferente de"
+    "voz": "διαφέρει",
+    "significado": "difre, é diferente de (impersoal + xen./dat.)"
   },
   {
     "voz": "διαφέρωπυς",
@@ -2028,8 +2028,8 @@
     "significado": "persecución"
   },
   {
-    "voz": "δοκεῖ, ἔδοξε (+ dat. + infinitivo)",
-    "significado": "parece (ben)\n1. ὡς δοκεῖ: segundo parece\n2. δοκεῖ μοι: paréceme ben"
+    "voz": "δοκεῖ, ἔδοξε",
+    "significado": "parece (ben) (+ dat. + infinitivo)\n1. ὡς δοκεῖ: segundo parece\n2. δοκεῖ μοι: paréceme ben"
   },
   {
     "voz": "δοκέω, δόξω, ἔδοξα, δέδογμαι",
@@ -2120,8 +2120,8 @@
     "significado": "palacio"
   },
   {
-    "voz": "δωρέω (+ media)",
-    "significado": "obsequiar"
+    "voz": "δωρέω",
+    "significado": "(+ media) obsequiar"
   },
   {
     "voz": "Δωριεύς, -έως",
@@ -2136,8 +2136,8 @@
     "significado": "aor. de ἁλίσκομαι"
   },
   {
-    "voz": "ἐάν (+ subxuntivo)",
-    "significado": "se"
+    "voz": "ἐάν",
+    "significado": "(+ subxuntivo) se"
   },
   {
     "voz": "ἔαρ, ἔαρος (ἦρος), τό",
@@ -2212,8 +2212,8 @@
     "significado": "eu"
   },
   {
-    "voz": "ἔγωγε (enfático)",
-    "significado": "eu"
+    "voz": "ἔγωγε",
+    "significado": "(enfático) eu"
   },
   {
     "voz": "ἔδακον",
@@ -2468,8 +2468,8 @@
     "significado": "asemblea"
   },
   {
-    "voz": "ἐκκομίζω (+ med.)",
-    "significado": "levar fóra, sacar"
+    "voz": "ἐκκομίζω",
+    "significado": "(+ med.) levar fóra, sacar"
   },
   {
     "voz": "ἑκούσιος, -α, -ον",
@@ -2504,8 +2504,8 @@
     "significado": "acabar"
   },
   {
-    "voz": "ἐκτός (+ xen.)",
-    "significado": "fóra"
+    "voz": "ἐκτός",
+    "significado": "fóra (+ xen.)"
   },
   {
     "voz": "ἕκτος, -η, -ον",
@@ -2956,8 +2956,8 @@
     "significado": "conseguir"
   },
   {
-    "voz": "ἐπιλανθάνομαι (+ xen.)",
-    "significado": "esquecerse de"
+    "voz": "ἐπιλανθάνομαι",
+    "significado": "(+ xen.) esquecerse de"
   },
   {
     "voz": "ἐπιμελέομαι",
@@ -3052,8 +3052,8 @@
     "significado": ""
   },
   {
-    "voz": "ἕπομαι, ἕψομαι, ἑσπόμην (+ dat.)",
-    "significado": "seguir"
+    "voz": "ἕπομαι, ἕψομαι, ἑσπόμην",
+    "significado": "(+ dat.) seguir"
   },
   {
     "voz": "ἑπόμην",
@@ -3920,8 +3920,8 @@
     "significado": "manto"
   },
   {
-    "voz": "ἵνα (+ subxuntivo / optativo)",
-    "significado": "para que (+subx.)"
+    "voz": "ἵνα",
+    "significado": "(+ subxuntivo / optativo) para que"
   },
   {
     "voz": "ἱππάζομαι",
@@ -4272,8 +4272,8 @@
     "significado": "espía"
   },
   {
-    "voz": "καταστρέφω (+med.)",
-    "significado": "someter"
+    "voz": "καταστρέφω",
+    "significado": "(+med.) someter"
   },
   {
     "voz": "κατασφάζω",
@@ -5072,7 +5072,7 @@
     "significado": "despezar"
   },
   {
-    "voz": "μέλλω, μελλήσω, ἐμέλλησα (+inf.)",
+    "voz": "μέλλω, μελλήσω, ἐμέλλησα",
     "significado": "ir (+inf.)"
   },
   {
@@ -5080,8 +5080,8 @@
     "significado": "perfecto medio con valor de presente."
   },
   {
-    "voz": "μέμνημαι (pfto. con valor de pste.)",
-    "significado": "lembrar"
+    "voz": "μέμνημαι",
+    "significado": "(pfto. con valor de pte.) lembrar"
   },
   {
     "voz": "Μέμφις, -εως",
@@ -5117,7 +5117,7 @@
   },
   {
     "voz": "μέσος, -η, -ον",
-    "significado": "medio\n1. ἐν μέσῳ (+xen.): no medio de\n2. κατὰ μέσον (+xen.): polo medio de"
+    "significado": "medio\n1. ἐν μέσῳ: no medio de (+xen.)\n2. κατὰ μέσον: polo medio de (+xen.)"
   },
   {
     "voz": "μεστός, -ή, -όν",
@@ -5164,8 +5164,8 @@
     "significado": "fronte"
   },
   {
-    "voz": "μέχρι (+xen.)",
-    "significado": "ata\n1. μέχρι οὗ: ata que, mentres que"
+    "voz": "μέχρι",
+    "significado": "ata (+xen.)\n1. μέχρι οὗ: ata que, mentres que"
   },
   {
     "voz": "μή",
@@ -5484,8 +5484,8 @@
     "significado": "xenitivo de ναῦς"
   },
   {
-    "voz": "νή (+ Ac.)",
-    "significado": "si, por ..."
+    "voz": "νή",
+    "significado": "si, por ... (+ ac.)"
   },
   {
     "voz": "Νησαῖος, -α, -ον",
@@ -6224,8 +6224,8 @@
     "significado": "botar"
   },
   {
-    "voz": "παραβοηθέω (+dat.)",
-    "significado": "vir a axudar"
+    "voz": "παραβοηθέω",
+    "significado": "vir a axudar (+dat.)"
   },
   {
     "voz": "παραγίγνομαι",
@@ -6244,8 +6244,8 @@
     "significado": "chamar, pedir"
   },
   {
-    "voz": "παραλαμβάνω (+med.)",
-    "significado": "acoller, asociar; apoderarse de (+xen.)"
+    "voz": "παραλαμβάνω",
+    "significado": "(+med.) acoller, asociar; apoderarse de (+xen.)"
   },
   {
     "voz": "παράλογος, -ου",
@@ -6312,8 +6312,8 @@
     "significado": "o Partenón"
   },
   {
-    "voz": "παρίστημι (+dat.)",
-    "significado": "permanecer preto, soster"
+    "voz": "παρίστημι",
+    "significado": "permanecer preto, soster (+dat.)"
   },
   {
     "voz": "παροράω",
@@ -6504,8 +6504,8 @@
     "significado": "caer"
   },
   {
-    "voz": "πιστεύω (+dat.)",
-    "significado": "confiar en"
+    "voz": "πιστεύω",
+    "significado": "confiar en (+dat.)"
   },
   {
     "voz": "πλανάω",
@@ -6516,8 +6516,8 @@
     "significado": "viaxe (errante)"
   },
   {
-    "voz": "Πλάταια, -ας (tm.. en pl.)",
-    "significado": "platea (cidade de Beocia)"
+    "voz": "Πλάταια, -ας",
+    "significado": "(tm.. en pl.) Platea (cidade de Beocia)"
   },
   {
     "voz": "Πλαταιεύς, -έως",
@@ -6852,8 +6852,8 @@
     "significado": "(+infinitivo) antes de, (indicat./subx.) antes de que"
   },
   {
-    "voz": "πρό (+xen.)",
-    "significado": "ante, antes de"
+    "voz": "πρό",
+    "significado": "ante, antes de (+xen.)"
   },
   {
     "voz": "προάγω",
@@ -7388,8 +7388,8 @@
     "significado": "exército"
   },
   {
-    "voz": "στρατεύω (e med.)",
-    "significado": "prestar servizo militar; ir á guerra"
+    "voz": "στρατεύω",
+    "significado": "(e med.) prestar servizo militar; ir á guerra"
   },
   {
     "voz": "στρατηγέω",
@@ -7468,8 +7468,8 @@
     "significado": "(+dat.) trabar (combate); med. comprender"
   },
   {
-    "voz": "συμβουλεύω (+dat.)",
-    "significado": "aconsellar"
+    "voz": "συμβουλεύω",
+    "significado": "aconsellar (+dat.)"
   },
   {
     "voz": "σύμβουλος, -ου",
@@ -7568,8 +7568,8 @@
     "significado": "correr xuntos"
   },
   {
-    "voz": "συντυγχάνω (+dat)",
-    "significado": "xuntarse con"
+    "voz": "συντυγχάνω",
+    "significado": "xuntarse con (+dat)"
   },
   {
     "voz": "Συράκουσαι, -ῶν",

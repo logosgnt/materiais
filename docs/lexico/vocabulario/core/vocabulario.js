@@ -1,3 +1,13 @@
+(() => {
+// -----------------------------
+// Configuración (desde HTML)
+// -----------------------------
+const config = window.VOCABULARIO_CONFIG || {};
+const MODE = config.mode || window.MODE || "greek";
+const DATA_URL = config.dataUrl || window.DATA_URL || "vocabulario_grego.json";
+const TITLE = config.title || "";
+
+// -----------------------------
 let data = [];
 let currentLetter = "Todo";
 let currentQuery = "";
@@ -11,50 +21,72 @@ const GREEK_ALPHABET = [
 const results = document.getElementById("results");
 const search = document.getElementById("search");
 const lettersDiv = document.getElementById("letters");
+const count = document.getElementById("count");
 
 // -----------------------------
 // Cargar JSON
 // -----------------------------
-fetch("vocabulario_grego.json")
-  .then(res => res.json())
+if (!results || !lettersDiv) {
+  throw new Error("Faltan os contedores #results ou #letters para renderizar o vocabulario.");
+}
+
+fetch(DATA_URL)
+  .then(res => {
+    if (!res.ok) {
+      throw new Error(`Non se puido cargar ${DATA_URL} (${res.status})`);
+    }
+    return res.json();
+  })
   .then(json => {
     data = json.map(e => ({
       ...e,
-      initial: getGreekInitial(e.voz)
+      initial: getInitial(e.voz)
     }));
 
     data.sort((a, b) =>
-      normalizeGreek(a.voz).localeCompare(normalizeGreek(b.voz), "el")
+      normalize(a.voz).localeCompare(
+        normalize(b.voz),
+        MODE === "greek" ? "el" : "es"
+      )
     );
 
     createLetters();
     applyFilters();
+  })
+  .catch(err => {
+    console.error("Erro cargando JSON:", err);
+    showMessage(`Non se puido cargar o vocabulario${TITLE ? ` de ${TITLE}` : ""}. Revisa que exista o ficheiro JSON configurado.`);
   });
 
 // -----------------------------
 // Busca
 // -----------------------------
-search.addEventListener("input", () => {
-  currentQuery = search.value.trim();
-  applyFilters();
-});
+if (search) {
+  search.addEventListener("input", () => {
+    currentQuery = search.value.trim();
+    applyFilters();
+  });
+}
 
 // -----------------------------
 // Filtros
 // -----------------------------
 function applyFilters() {
-  const q = normalizeGreek(currentQuery);
-  const qLatin = normalizeGreek(latinToGreek(currentQuery));
+  const q = normalize(currentQuery);
+
+  const qLatin = MODE === "greek"
+    ? normalize(latinToGreek(currentQuery))
+    : null;
 
   const filtered = data.filter(e => {
-    const voz = normalizeGreek(e.voz);
-    const sig = normalizeGreek(e.significado);
+    const voz = normalize(e.voz);
+    const sig = normalize(e.significado);
 
     const matchesQuery =
       currentQuery === "" ||
-      voz.includes(q) ||
       sig.includes(q) ||
-      voz.includes(qLatin);
+      voz.startsWith(q) ||
+      (MODE === "greek" && qLatin && voz.startsWith(qLatin));
 
     const matchesLetter =
       currentLetter === "Todo" || e.initial === currentLetter;
@@ -66,10 +98,16 @@ function applyFilters() {
 }
 
 // -----------------------------
-// Render con subentradas
+// Render
 // -----------------------------
 function render(list) {
   results.innerHTML = "";
+  updateCount(list.length);
+
+  if (list.length === 0) {
+    showMessage("Non hai resultados para esa busca.");
+    return;
+  }
 
   list.forEach(e => {
     const { main, subs } = parseMeaning(e.significado);
@@ -77,29 +115,61 @@ function render(list) {
     const div = document.createElement("div");
     div.className = "entry";
 
-    let html = `
-      <span class="greek">${e.voz}</span>: 
-      <span class="meaning">${main}</span>
-    `;
+    const headword = document.createElement("span");
+    headword.className = `headword ${MODE === "greek" ? "greek" : "latin"}`;
+    headword.textContent = e.voz;
+    div.appendChild(headword);
+    div.append(": ");
+
+    const meaning = document.createElement("span");
+    meaning.className = "meaning";
+    meaning.textContent = main;
+    div.appendChild(meaning);
 
     if (subs.length > 0) {
-      html += `<ul class="subs">`;
+      const ul = document.createElement("ul");
+      ul.className = "subs";
 
       subs.forEach(s => {
-        const parts = s.split(":");
-        if (parts.length > 1) {
-          html += `<li><span class="greek">${parts[0]}</span>: ${parts.slice(1).join(":")}</li>`;
+        const li = document.createElement("li");
+        const separator = s.indexOf(":");
+
+        if (separator > -1) {
+          const subterm = document.createElement("span");
+          subterm.className = `subterm ${MODE === "greek" ? "greek" : "latin"}`;
+          subterm.textContent = s.slice(0, separator);
+
+          li.appendChild(subterm);
+          li.append(`:${s.slice(separator + 1)}`);
         } else {
-          html += `<li>${s}</li>`;
+          li.textContent = s;
         }
+
+        ul.appendChild(li);
       });
 
-      html += `</ul>`;
+      div.appendChild(ul);
     }
 
-    div.innerHTML = html;
     results.appendChild(div);
   });
+}
+
+function showMessage(text) {
+  results.innerHTML = "";
+  updateCount(0);
+
+  const p = document.createElement("p");
+  p.className = "empty";
+  p.textContent = text;
+  results.appendChild(p);
+}
+
+function updateCount(total) {
+  if (!count) return;
+
+  const label = total === 1 ? "entrada" : "entradas";
+  count.textContent = `${total} ${label}`;
 }
 
 // -----------------------------
@@ -136,10 +206,16 @@ function createLetters() {
   const all = createBtn("Todo");
   lettersDiv.appendChild(all);
 
-  GREEK_ALPHABET.forEach(l => {
+  const alphabet = MODE === "greek"
+    ? GREEK_ALPHABET
+    : "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
+  alphabet.forEach(l => {
     const btn = createBtn(l);
     lettersDiv.appendChild(btn);
   });
+
+  updateActive();
 }
 
 function createBtn(letter) {
@@ -165,6 +241,11 @@ function updateActive() {
 // -----------------------------
 // Normalización
 // -----------------------------
+function normalize(str) {
+  if (MODE === "greek") return normalizeGreek(str);
+  return normalizeText(str);
+}
+
 function normalizeGreek(str) {
   return (str || "")
     .toLowerCase()
@@ -174,9 +255,23 @@ function normalizeGreek(str) {
     .replace(/\s+/g, "");
 }
 
+function normalizeText(str) {
+  return (str || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "");
+}
+
 // -----------------------------
-// Inicial grega
+// Inicial
 // -----------------------------
+function getInitial(voz) {
+  if (MODE === "greek") return getGreekInitial(voz);
+  const clean = normalizeText(voz);
+  return clean?.[0]?.toUpperCase() || "#";
+}
+
 function getGreekInitial(voz) {
   const clean = voz
     .normalize("NFD")
@@ -194,7 +289,7 @@ function getGreekInitial(voz) {
 // Latín → grego (básico)
 // -----------------------------
 function latinToGreek(str) {
-  return str
+  return (str || "")
     .toLowerCase()
     .replace(/ph/g,"φ")
     .replace(/f/g,"φ")
@@ -226,3 +321,4 @@ function latinToGreek(str) {
     .replace(/y/g,"υ")
     .replace(/w/g,"ω");
 }
+})();
