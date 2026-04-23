@@ -1021,15 +1021,11 @@
   },
   {
     "voz": "arte",
-    "significado": "adv. - estreitamente"
+    "significado": "adv. estreitamente\n1. artius: máis estreitamente"
   },
   {
     "voz": "artifex, artificis (m.)",
     "significado": "artífice, artista"
-  },
-  {
-    "voz": "artius",
-    "significado": "máis estreitamente"
   },
   {
     "voz": "artus, artus, m",
@@ -1301,7 +1297,11 @@
   },
   {
     "voz": "Baiae, Baiarum",
-    "significado": "Baias, cidade da Campania en Italia Balbus, -bi- Balvo"
+    "significado": "Baias, cidade da Campania en Italia"
+  },
+  {
+    "voz": "Balbus, -bi",
+    "significado": "Balvo"
   },
   {
     "voz": "balneum, balnei (n.)",
@@ -5689,7 +5689,11 @@
   },
   {
     "voz": "illuc",
-    "significado": "cara alá illuceo, -es, -ere, -- lucir, brillar"
+    "significado": "cara alá"
+  },
+  {
+    "voz": "illuceo, -es, -ere",
+    "significado": "lucir, brillar"
   },
   {
     "voz": "illusco, illuscis, illuscere",
@@ -7853,7 +7857,7 @@
   },
   {
     "voz": "nando",
-    "significado": "ver no- nadar"
+    "significado": "ver no (nadar)"
   },
   {
     "voz": "narro, narrare, narravi, narratum",
@@ -8909,23 +8913,31 @@
   },
   {
     "voz": "Parca, -ae",
-    "significado": "Parca,deusa do destino, destino parco, parcere, peperci + dat. - perdoar, aforrar, respectar"
+    "significado": "Parca,deusa do destino, destino"
   },
   {
-    "voz": "parens, parentis, m. f.",
+    "voz": "parco, parcere, peperci",
+    "significado": "perdoar, aforrar, respectar (+ dat.)"
+  },
+  {
+    "voz": "parens, parentis (m./f.)",
     "significado": "pai (ou nai)"
   },
   {
-    "voz": "parentes, parentum, m. f. pl.",
+    "voz": "parentes, parentum (m./f. pl.)",
     "significado": "pais"
   },
   {
-    "voz": "pareo, parere, parui + dat.",
-    "significado": "obedecer"
+    "voz": "pareo, parere, parui",
+    "significado": "obedecer (+ dat.)"
   },
   {
     "voz": "paries, parietis (m.)",
-    "significado": "parede pario, parere, peperi, partum -adquirir, conseguir"
+    "significado": "parede"
+  },
+  {
+    "voz": "pario, parere, peperi, partum",
+    "significado": "adquirir, conseguir"
   },
   {
     "voz": "Paris, Paridis",
@@ -12453,7 +12465,11 @@
   },
   {
     "voz": "taberna, tabernae (f.)",
-    "significado": "tenda, pousada tabernarius, -ii- taberneiro"
+    "significado": "tenda, pousada"
+  },
+  {
+    "voz": "tabernarius, -ii",
+    "significado": "tendeiro, taberneiro"
   },
   {
     "voz": "tabesco, tabescere, tabui",
@@ -13105,7 +13121,11 @@
   },
   {
     "voz": "ululatus, ululatus (m.)",
-    "significado": "alarido, lamento, ladrido ululo, 1ª- ulular, ouvear"
+    "significado": "alarido, lamento, ladrido"
+  },
+  {
+    "voz": "ululo, 1ª",
+    "significado": "ulular, ouvear"
   },
   {
     "voz": "Umber, Umbri (m.)",
@@ -13153,7 +13173,11 @@
   },
   {
     "voz": "unguentum, unguenti",
-    "significado": "ungüento, aceite unguis, -is- uña, pezuño"
+    "significado": "ungüento, aceite"
+  },
+  {
+    "voz": "unguis, -is",
+    "significado": "uña, pezuño"
   },
   {
     "voz": "unguo, unguere, unxi, unctum",

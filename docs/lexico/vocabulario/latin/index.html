@@ -21,8 +21,9 @@
 
     <div id="results"></div>
 
-    <!-- BOTÓN PDF -->
-    <button id="pdf-btn">Xerar PDF</button>
+    <p class="footer-link">
+      <a id="pdf-btn" href="./vocabulario_latin.pdf">Abrir PDF</a>
+    </p>
 
     <p class="footer-link">
       <a href="../">← Volver á portada</a>
@@ -41,78 +42,6 @@
 
   <!-- MOTOR -->
   <script src="../core/vocabulario.js"></script>
-
-  <!-- jsPDF + autoTable -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
-
-  <!-- SCRIPT PDF -->
-  <script>
-  document.getElementById("pdf-btn").addEventListener("click", async () => {
-    const { jsPDF } = window.jspdf;
-
-    const doc = new jsPDF({
-      orientation: "portrait",
-      unit: "pt",
-      format: "a4"
-    });
-
-    // 1. Cargar fonte DejaVu desde o repo
-    const fontBytes = await fetch("../../../fonts/DejaVuLGCSerif.ttf")
-      .then(r => r.arrayBuffer())
-      .then(arrayBufferToBase64);
-
-    doc.addFileToVFS("DejaVuSerif.ttf", fontBytes);
-    doc.addFont("DejaVuSerif.ttf", "DejaVuSerif", "normal");
-    doc.setFont("DejaVuSerif");
-    doc.setFontSize(12);
-
-    // 2. Márxenes
-    const margin = 56.7; // 2 cm
-
-    // 3. Recoller vocabulario
-    const entries = Array.from(document.querySelectorAll(".entry"))
-      .map(e => e.innerText);
-
-    // 4. Dúas columnas
-    const half = Math.ceil(entries.length / 2);
-    const col1 = entries.slice(0, half);
-    const col2 = entries.slice(half);
-    const rows = col1.map((v, i) => [v, col2[i] || ""]);
-
-    // 5. Título
-    doc.text("Vocabulario de Latín", margin, margin);
-
-    // 6. Táboa principal
-    doc.autoTable({
-      startY: margin + 20,
-      margin: { left: margin, right: margin },
-      head: [],
-      body: rows,
-      styles: {
-        font: "DejaVuSerif",
-        fontSize: 12,
-        cellPadding: 3
-      },
-      theme: "plain"
-    });
-
-    // 7. Gardar PDF
-    doc.save("vocabulario_latin.pdf");
-  });
-
-  function arrayBufferToBase64(buffer) {
-    const bytes = new Uint8Array(buffer);
-    const chunkSize = 0x8000;
-    let binary = "";
-
-    for (let i = 0; i < bytes.length; i += chunkSize) {
-      binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize));
-    }
-
-    return btoa(binary);
-  }
-  </script>
 
 </body>
 </html>

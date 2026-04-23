@@ -530,11 +530,10 @@
 
 - ars, artis (f.): técnica, arte
 
-- arte: adv. - estreitamente
+- arte: adv. estreitamente
+1. artius: máis estreitamente
 
 - artifex, artificis (m.): artífice, artista
-
-- artius: máis estreitamente
 
 - artus, artus, m: membro
 
@@ -676,7 +675,9 @@
 
 - Baebius, -bii: Baebio (nome propio)
 
-- Baiae, Baiarum: Baias, cidade da Campania en Italia Balbus, -bi- Balvo
+- Baiae, Baiarum: Baias, cidade da Campania en Italia 
+
+- Balbus, -bi: Balvo
 
 - balneum, balnei (n.): baño
 
@@ -2930,7 +2931,9 @@
 
 - illinc: desde alí
 
-- illuc: cara alá illuceo, -es, -ere, -- lucir, brillar
+- illuc: cara alá 
+
+- illuceo, -es, -ere: lucir, brillar
 
 - illusco, illuscis, illuscere: brillar
 
@@ -4051,7 +4054,7 @@
 
 - nam: pois, en efecto
 
-- nando: ver no- nadar
+- nando: ver no (nadar)
 
 - narro, narrare, narravi, narratum: contar, narrar
 
@@ -4603,15 +4606,19 @@
 
 - paratus, parata, paratum: preparado
 
-- Parca, -ae: Parca,deusa do destino, destino parco, parcere, peperci + dat. - perdoar, aforrar, respectar
+- Parca, -ae: Parca,deusa do destino, destino 
 
-- parens, parentis, m. f.: pai (ou nai)
+- parco, parcere, peperci:perdoar, aforrar, respectar (+ dat.)
 
-- parentes, parentum, m. f. pl.: pais
+- parens, parentis (m./f.): pai (ou nai)
 
-- pareo, parere, parui + dat.: obedecer
+- parentes, parentum (m./f. pl.): pais
 
-- paries, parietis (m.): parede pario, parere, peperi, partum -adquirir, conseguir
+- pareo, parere, parui: obedecer (+ dat.)
+
+- paries, parietis (m.): parede 
+
+- pario, parere, peperi, partum: adquirir, conseguir
 
 - Paris, Paridis: Paris
 
@@ -6421,7 +6428,9 @@
 
 ## T
 
-- taberna, tabernae (f.): tenda, pousada tabernarius, -ii- taberneiro
+- taberna, tabernae (f.): tenda, pousada 
+
+- tabernarius, -ii: tendeiro, taberneiro
 
 - tabesco, tabescere, tabui: derreterse
 
@@ -6755,7 +6764,9 @@
 
 - ultra: máis alá (de)
 
-- ululatus, ululatus (m.): alarido, lamento, ladrido ululo, 1ª- ulular, ouvear
+- ululatus, ululatus (m.): alarido, lamento, ladrido 
+
+- ululo, 1ª: ulular, ouvear
 
 - Umber, Umbri (m.): umbro, da Umbría
 
@@ -6779,7 +6790,9 @@
 
 - undique: de todas partes, por todas partes
 
-- unguentum, unguenti: ungüento, aceite unguis, -is- uña, pezuño
+- unguentum, unguenti: ungüento, aceite 
+
+- unguis, -is: uña, pezuño
 
 - unguo, unguere, unxi, unctum: untar, unxir
 
