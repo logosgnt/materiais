@@ -3263,6 +3263,8 @@
 1. ὁ πεζός (στρατός): a infantería
 2. πεζῇ: a pé, por terra
 
+- πείθω: persuadir, convencer; inducir a alguén a facer algo; (voz media/pasiva) obedecer, confiar, deixarse convencer
+
 - πέος, -ους: pene
 
 - πέπλος, -ου: túnica
