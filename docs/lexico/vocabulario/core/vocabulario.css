@@ -127,6 +127,11 @@ body.vocabulario-page {
   margin: 0.15rem 0;
 }
 
+.sub-note {
+  margin-top: 0.12rem;
+  padding-left: 0.8rem;
+}
+
 .empty {
   margin: 1.5rem 0;
   padding: 1rem;

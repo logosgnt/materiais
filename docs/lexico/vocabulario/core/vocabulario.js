@@ -132,18 +132,7 @@ function render(list) {
 
       subs.forEach(s => {
         const li = document.createElement("li");
-        const separator = s.indexOf(":");
-
-        if (separator > -1) {
-          const subterm = document.createElement("span");
-          subterm.className = `subterm ${MODE === "greek" ? "greek" : "latin"}`;
-          subterm.textContent = s.slice(0, separator);
-
-          li.appendChild(subterm);
-          li.append(`:${s.slice(separator + 1)}`);
-        } else {
-          li.textContent = s;
-        }
+        appendStructuredSubentry(li, s);
 
         ul.appendChild(li);
       });
@@ -180,14 +169,21 @@ function parseMeaning(text) {
 
   const main = [];
   const subs = [];
+  let currentSub = null;
 
   lines.forEach(l => {
     const line = l.trim();
+    if (!line) return;
 
     if (/^\d+\./.test(line)) {
-      subs.push(line.replace(/^\d+\.\s*/, ""));
+      currentSub = line.replace(/^\d+\.\s*/, "");
+      subs.push(currentSub);
     } else {
-      main.push(line);
+      if (currentSub) {
+        subs[subs.length - 1] += `\n${line}`;
+      } else {
+        main.push(line);
+      }
     }
   });
 
@@ -195,6 +191,35 @@ function parseMeaning(text) {
     main: main.join(" "),
     subs
   };
+}
+
+function appendStructuredSubentry(container, text) {
+  const lines = text.split("\n").map(line => line.trim()).filter(Boolean);
+  if (lines.length === 0) return;
+
+  appendSubLine(container, lines[0], true);
+
+  lines.slice(1).forEach(line => {
+    const extra = document.createElement("div");
+    extra.className = "sub-note";
+    appendSubLine(extra, line, false);
+    container.appendChild(extra);
+  });
+}
+
+function appendSubLine(container, text, highlightTerm) {
+  const separator = text.indexOf(":");
+
+  if (separator > -1 && highlightTerm) {
+    const subterm = document.createElement("span");
+    subterm.className = `subterm ${MODE === "greek" ? "greek" : "latin"}`;
+    subterm.textContent = text.slice(0, separator);
+    container.appendChild(subterm);
+    container.append(`:${text.slice(separator + 1)}`);
+    return;
+  }
+
+  container.append(text);
 }
 
 // -----------------------------
